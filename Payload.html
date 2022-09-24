@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners: Example 3-11-1</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: 'Poppins', sans-serif;
+				font-size: 25px;
+			}
+			.learn{
+				text-align: center;
+			}
+			h2 span{
+				display: block;
+				font-style: italic;
+				color: rgb(140, 142, 146);
+			}
+
+			.plan-features {
+				padding: 0;
+				text-align: left;
+			}
+
+			.plan-features li {
+				list-style: none;
+				padding-left: 2rem;
+				margin-bottom: .5rem;
+				color: rgb(140, 142, 146);
+				background-image: url("images/example/green-checkmark.svg");
+				background-repeat: no-repeat;
+				background-position: left center;
+			}
+			button{
+				padding: 1rem 12rem;
+				margin-left: -.5rem;
+				background-color: rgb(84, 101, 200);
+				border-radius: .5rem;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<h1>Platinum</h1>
+			<h2>$45 <span>per month</span></h2>
+
+			<hr>
+
+			<ul class="plan-features">
+				<li><strong>Unlimited</strong> Websites</li>
+				<li><strong>20</strong> GB Web Space</li>
+				<li><strong>~ 100,000</strong> Visits Monthly</li>
+				<li><strong>Unmetered</strong> Traffic</li>
+				<li><strong>Free</strong> SSL</li>
+			</ul>
+
+			<button>Choose Plan</button>
+
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="lesson 3-11: Styling Lists in CSS">
+			<img width="504px" src="images/reference/pricing-plan.png" alt="Reference image" />
+		</section>
+	</body>
+</html>
