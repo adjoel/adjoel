@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners: Example 2-11-2</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+	</head>
+
+	<body class="flip">
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<form action="" method="post" id="order-form">
+				<h1>Your Order</h1>
+				<div>
+					<label for="order-name">Name</label>
+					<input type="text" name="order-name" id="order-name" placeholder="Your full name">
+				</div>
+				<div>
+					<label for="order-email">Email</label>
+					<input type="email" name="order-email" id="order-email" value="name@email.com" disabled>
+				</div>
+				<div>
+					<label for="order-address1">Address</label>
+					<input type="text" name="order-address1" id="order-address1" placeholder="Address 1">
+					<input type="text" name="order-address2" id="order-address2" placeholder="Address 2">
+				</div>
+				<div>
+					<div>
+						<label for="order-city">City</label>
+						<input type="text" name="order-city" id="order-city" placeholder="Manchester">
+					</div>
+					<div>
+						<label for="order-state">State</label>
+						<select name="order-state" id="order-state">
+							<option value="Alabama">Alabama</option>
+							<option value="Alaska">Alaska</option>
+							<option value="Kansas">Kansas</option>
+							<option value="Miami">Miami</option>
+						</select>
+					</div>
+					<div>
+						<label for="order-zip">Zip</label>
+						<input type="text" name="order-zip" id="order-zip" placeholder="76857">
+					</div>
+				</div>
+				<div>
+					<label>What color samples should we send you</label><br>
+					<label for="white-sample">
+						<input type="checkbox" name="color-sample" id="white-sample" value="white" disabled>White
+					</label>
+					<label for="Magnet-sample">
+						<input type="checkbox" name="color-sample" id="Magnet-sample" value="Magnet">Magnet
+					</label>
+					<label for="Coral-sample">
+						<input type="checkbox" name="color-sample" id="Coral-sample" value="Coral">Coral
+					</label>
+					<label for="Burgudy-sample">
+						<input type="checkbox" name="color-sample" id="Burgudy-sample" value="Burgudy">Burgudy
+					</label>
+					<label for="Charcoal-sample">
+						<input type="checkbox" name="color-sample" id="Charcoal-sample" value="Charcoal">Charcoal
+					</label>
+				</div>
+				<div>
+					<label>How large is your team</label>
+					<label for="size-1">
+						<input type="radio" name="team-size" id="size-1" value="1-5">1-5 people
+					</label>
+					<label for="size-2">
+						<input type="radio" name="team-size" id="size-2" value="6-10" checked>6-10 people
+					</label>
+					<label for="size-3">
+						<input type="radio" name="team-size" id="size-3" value="10+">10+ people
+					</label>
+				</div>
+				<div>
+					<label for="order-comments">Comments</label>
+					<textarea name="order-comments" id="order-comments" cols="30" rows="10"></textarea>
+				</div>
+				<div>
+					<label for="order-signup">
+						<input type="checkbox" name="order-signup" id="order-signup"> Sign up for a Special offer
+					</label>
+				</div>
+				<!-- for submit button there are multiple ways -->
+				<!-- <button>Place order</button> -->
+				<!-- <input type="button" name="" id="" value="Place order"> -->
+				<!-- <input type="submit" name="" id="" value="Place order"> -->
+			</form>
+			<button form="order-form">Place order</button>
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="lesson 2-11: Using Forms and Buttons">
+			<img width="903px" src="images/reference/order-form.png" alt="Reference image" />
+		</section>
+	</body>
+</html>
